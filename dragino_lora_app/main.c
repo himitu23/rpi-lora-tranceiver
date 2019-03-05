@@ -74,7 +74,7 @@ int main (int argc, char *argv[]) {
 
         writeReg(RegPaRamp, (readReg(RegPaRamp) & 0xF0) | 0x08); // set PA ramp-up time 50 uSec
 
-        configPower(23);
+        configPower(13);//maximum 13dBm in Japan
 
         printf("Send packets at SF%i on %.6lf Mhz.\n", sf,(double)freq/1000000);
         printf("------------------\n");
